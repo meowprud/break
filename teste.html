@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar</title>
+    <link rel="stylesheet" href="css/teste1.css" />
+    <link rel="stylesheet" href="css/carrossel.css" />
+
+  </head>
+
+  <body>
+
+    <header>
+      <nav class="intro">
+
+      </nav>
+      <nav class="barra">
+        <a class="logo">Break Time</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="barra-list">
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Endereço</a></li>
+        </ul>
+      </nav>
+
+     
+    </header>
+    <main>
+      <div class = "scroll">
+        <form>
+          <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
+          <input type="radio" name="fancy" value="hearts" id="hearts" />
+          <input type="radio" name="fancy" value="spades" id="spades" />
+          <input type="radio" name="fancy" value="diamonds" id="diamonds" />			
+          <label for="clubs">&#9827; Clubs</label>
+          <label for="hearts">&#9829; Hearts</label>
+          <label for="spades">&#9824; Spades</label>
+          <label for="diamonds">&#9830; Diamonds</label>
+      <div class="keys">Use left and right keys to navigate</div>
+      </form>
+      </div>
+      <div id="remover"></div>
+      <div class = "sobre">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere repellendus deserunt dicta eum, fugit recusandae voluptate accusamus quisquam! <br>
+           Aspernatur ex ratione temporibus, quis non voluptatibus voluptatum inventore dicta blanditiis,<br>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, placeat recusandae? Recusandae architecto ipsam, vero aspernatur molestias <br>
+           excepturi ut cumque, modi quaerat quo aperiam voluptatum magnam delectus corporis minima exercitationem!Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+           Facere repellendus deserunt dicta eum, fugit recusandae voluptate accusamus quisquam! <br>
+           Aspernatur ex ratione temporibus, quis non voluptatibus voluptatum inventore dicta blanditiis,<br>
+           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, placeat recusandae? Recusandae architecto ipsam, vero aspernatur molestias <br>
+           excepturi ut cumque, modi quaerat quo aperiam voluptatum magnam delectus corporis minima exercitationem!
+        </p>
+        
+      </div>
+      <div id="botao">
+        <a href = "https://www.delftstack.com/pt/howto/html/link-in-html-button/">
+        <button>Ver mais</button>
+        </a></div>
+    
+      <div class = "quadro-dois">
+      
+    </main> 
+    <script src="javascript/mobile-navbar.js"></script>
+    <script>
+      function removerChecked() {
+          var ele = document.getElementsByName("fancy");
+          for(var i=0;i<ele.length;i++){
+             ele[i].checked = false;
+          }
+      }
+  </script>
+  </body>
+</html>
